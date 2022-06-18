@@ -1,4 +1,4 @@
-package main.java.thread.basics;
+package main.java.thread.section2.basics;
 
 /*
 

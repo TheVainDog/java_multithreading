@@ -1,4 +1,4 @@
-package main.java.thread.multiexecutor;
+package main.java.thread.section2.multiexecutor;
 
 import java.util.List;
 
