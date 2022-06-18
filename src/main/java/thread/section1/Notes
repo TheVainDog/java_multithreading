@@ -1,2 +1,29 @@
 1. Responsiveness - Concurrency
 2. Performance - Parallelism
+
+Threads shares:
+    Files: All resources files
+    Heap: Dynamic memory allocation (it saves values)
+    Code: Code Instructions
+
+Thread sections:
+    Stack: Region where local variables are storage and function are executed
+    Instruction pointer: Address to next instruction to execute
+
+========================================================================
+
+Context Switch is CPU process of :
+    > Stop thread 1
+    > Schedule thread 1 out
+    > Schedule thread 2 in
+    > Start Thread 2
+
+Context Switch is no a cheap process:
+    Each time a switch is perform,
+    there is a process to
+    > remove all data for current thread finished execution time
+    > restore data for the next thread to execute
+
+An Epoch is a time lap
+CPU use Epoch to give execution time for each thread.
+Not all the Threads has to complete an Epoch
